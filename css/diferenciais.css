@@ -1,0 +1,98 @@
+.flex-primeiraLinha {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.flex-segundaLinha {
+  display: flex;
+  padding-top: 20px;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+article {
+  max-width: 1090px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.flex-primeiraLinha p,
+.flex-segundaLinha p {
+  padding-top: 10px;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  max-width: 33ch;
+}
+
+article h2 {
+  font-size: 2rem;
+  color: rgba(000, 000, 000, 0.5);
+  text-indent: 15px;
+}
+.item-position {
+  position: relative;
+  flex: 1;
+}
+.roxo::before {
+  content: "";
+  width: 10px;
+  height: 25px;
+  background-color: rgb(221, 98, 221);
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+.roxo2::before {
+  content: "";
+  width: 10px;
+  height: 25px;
+  background-color: rgb(221, 98, 221);
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+.vermelho::before {
+  content: "";
+  width: 10px;
+  height: 25px;
+  background-color: rgb(218, 105, 105);
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+.vermelho2::before {
+  content: "";
+  width: 10px;
+  height: 25px;
+  background-color: rgb(218, 105, 105);
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+.azul::before {
+  content: "";
+  width: 10px;
+  height: 25px;
+  background-color: rgb(86, 86, 224);
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+.azul2::before {
+  content: "";
+  width: 10px;
+  height: 25px;
+  background-color: rgb(86, 86, 224);
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}

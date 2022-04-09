@@ -1,0 +1,41 @@
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.valores {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: solid 2px rgb(24, 0, 160);
+}
+main h1{
+  margin-left: 10px;
+}
+.sobre {
+  font-size:2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+}
+
+main p {
+  max-width: 50ch;
+  min-width: 40ch;
+  font-size: 1.2rem;
+  font-weight: 450;
+  padding-bottom: 20px;
+  padding-right: 50px;
+  margin-left: 10px;
+}
+.flex-sobre {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: solid 2px rgb(24, 0, 160);
+}
+@media(max-width: 970px){
+
+   main img{
+    display: none;
+  }
+
+}
