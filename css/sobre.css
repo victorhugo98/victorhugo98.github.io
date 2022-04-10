@@ -19,7 +19,6 @@ main h1{
 
 main p {
   max-width: 50ch;
-  min-width: 40ch;
   font-size: 1.2rem;
   font-weight: 450;
   padding-bottom: 20px;
@@ -33,9 +32,7 @@ main p {
   border-bottom: solid 2px rgb(24, 0, 160);
 }
 @media(max-width: 970px){
-
    main img{
     display: none;
   }
-
 }
