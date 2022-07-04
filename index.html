@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <meta name="description" content="Meu primeiro projeto em Flexbox.">
+    <script>
+    document.documentElement.classList.add('js')
+    </script>
     <title>Flexblog</title>
 </head>
 <body>
@@ -30,7 +33,7 @@
     </div>
     </header>
 
-    <main id="sobre" aria-label="Sobre">
+    <main id="sobre" class="js-animacao" aria-label="Sobre">
        <div class="valores">
             <h1 class="">Novos valores e <br>Propriedades de CSS</h1>
         </div>    
@@ -44,7 +47,7 @@
         <div><img src="./img/sobre2.jpg" alt="imagem2"></div>
     </div>
     </main>
-    <section id="produtos" class="produtos" aria-labelledby="Produtos">
+    <section id="produtos" class="produtos js-animacao" aria-labelledby="Produtos">
     <h2 id="Produtos" class="produtos-h2">Produtos</h2>
     <div class="flex-produtos">
         <div class="purple">
@@ -62,7 +65,7 @@
     </div>
     </section>
 
-    <section id="preco" class="preco" aria-labelledby="Preços">
+    <section class="js-animacao" id="preco" class="preco" aria-labelledby="Preços">
        <div class="precoAlinhar">
            <h2 id="Preços">Preços</h2>
         </div>
@@ -108,7 +111,7 @@
 
     </section>
 
-    <article>
+    <article class="js-animacao">
         <div class="flex-primeiraLinha">
 
             <div class="item-position">
@@ -163,7 +166,7 @@
 
     </article>
 
-    <section class="newsletter">
+    <section class="newsletter"  id="contato">
         <div class="newsletter-info">
             <h1>Newsletter</h1>
             <p>Assine e fique por dentro <br> das novidades.</p>
@@ -181,6 +184,6 @@
         <p>Flexblog© Todos os direitos reservados.</p>
     </footer>
 
-    
+    <script src="./script.js"></script>
 </body>
 </html>

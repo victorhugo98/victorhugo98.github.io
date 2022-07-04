@@ -18,4 +18,13 @@ img{
   max-width: 100%;
 }
 
+.js .js-animacao{
+  opacity: 0;
+  transform:translateX(-30px) ;
+}
+.js .js-animacao.ativo{
+  opacity: 1;
+  transform:translateX(0px);
+  transition: .6s;
 
+}
