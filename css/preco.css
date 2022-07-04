@@ -9,6 +9,7 @@
   margin: 0 auto;
   font-size: 1.3rem;
   font-weight: 700;
+  margin-left: 10px;
 }
 .flex-preco-item {
   max-width: 1040px;
