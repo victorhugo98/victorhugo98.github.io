@@ -25,3 +25,15 @@ secoes.forEach((item) =>
 })
 }
   window.addEventListener('scroll', animarItens)
+
+  const menuMobile = document.querySelector('.menu-mobile')
+  const navHeader = document.querySelector('.flex-lista')
+
+  function ativarMenuMobile(){
+    menuMobile.classList.toggle('ativo')
+    navHeader.classList.toggle('ativo')
+    
+  }
+
+
+  menuMobile.addEventListener('click', ativarMenuMobile)

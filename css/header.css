@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 .background1 {
   background-color: blue;
   color: white;
@@ -27,6 +30,8 @@
   align-items: center;
   
 }
+
+
 .flex-lista,
 .flex-lista a {
   display: flex;
@@ -53,5 +58,64 @@
 
   .flex-lista a{
     padding-bottom: 10px;
+  }
+}
+.menu-mobile{
+  display: none;
+}
+@media(max-width: 970px){
+ .flex-lista{
+   position: absolute;
+   right: -20px;
+   top: 120px;
+   flex-direction: column;
+   background-color: rgb(24, 0, 160);
+   width: 100px;
+   height: auto;
+   border-radius: 4px;
+   display: none;
+  
+ }
+ .flex-lista.ativo{
+  display: block;
+  animation: teste .6s forwards;
+
+ }
+ .menu-mobile{
+   display: block;
+   
+ }
+ .menu-mobile div{
+   background-color: white;
+   width: 32px;
+   height: 2px;
+   margin: 8px;
+   border-radius: 50%;
+ }
+ .menu-mobile{
+   cursor: pointer;
+ }
+ .menu-mobile.ativo .l2{
+   opacity: 0;
+ }
+ .menu-mobile.ativo .l1{
+   
+   transform:rotate(45deg) translate(14px);
+   transition: .3s;
+ }
+ .menu-mobile.ativo .l3{
+   
+   transform:rotate(-45deg)translate(14px);
+   transition: .3s;
+
+ }
+}
+@keyframes teste {
+  from{
+    transform: translateX(30px);
+  }
+  to{
+    transform: translateX(0px);
+
   }
 }

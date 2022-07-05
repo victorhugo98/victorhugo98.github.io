@@ -31,7 +31,9 @@ main p {
   padding-bottom: 20px;
   border-bottom: solid 2px rgb(24, 0, 160);
 }
+
 @media(max-width: 970px){
    main img{
     display: none;
-  }}
+  }
+}
