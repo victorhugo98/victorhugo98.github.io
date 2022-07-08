@@ -31,7 +31,6 @@ body{
   
 }
 
-
 .flex-lista,
 .flex-lista a {
   display: flex;
@@ -54,12 +53,6 @@ body{
   color: white;
   margin: 0px 10px 0px 10px;
 }
-@media(max-width:495px){
-
-  .flex-lista a{
-    padding-bottom: 10px;
-  }
-}
 .menu-mobile{
   display: none;
 }
@@ -69,42 +62,52 @@ body{
    right: -20px;
    top: 120px;
    flex-direction: column;
-   background-color: rgb(24, 0, 160);
+   background-color: rgb(58, 36, 181);
    width: 100px;
-   height: auto;
+   height: 130px;
    border-radius: 4px;
    display: none;
+    animation: teste .6s forwards;
+    padding-bottom: 10px;
+   
+
   
+ }
+ .flex-lista li{
+  padding-top: 8px;
  }
  .flex-lista.ativo{
   display: block;
   animation: teste .6s forwards;
-
+  z-index: 1000;
  }
  .menu-mobile{
    display: block;
-   
+   position: relative;
+   top: 0px;
+   right: 0px;
  }
  .menu-mobile div{
    background-color: white;
    width: 32px;
    height: 2px;
    margin: 8px;
-   border-radius: 50%;
  }
  .menu-mobile{
    cursor: pointer;
+ }
+ .menu-mobile.ativo{
+  right: 5px;
  }
  .menu-mobile.ativo .l2{
    opacity: 0;
  }
  .menu-mobile.ativo .l1{
-   
    transform:rotate(45deg) translate(14px);
    transition: .3s;
  }
  .menu-mobile.ativo .l3{
-   
+  
    transform:rotate(-45deg)translate(14px);
    transition: .3s;
 
@@ -113,9 +116,9 @@ body{
 @keyframes teste {
   from{
     transform: translateX(30px);
+    
   }
   to{
     transform: translateX(0px);
-
   }
 }

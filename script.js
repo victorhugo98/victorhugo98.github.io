@@ -26,14 +26,18 @@ secoes.forEach((item) =>
 }
   window.addEventListener('scroll', animarItens)
 
+
+
+  
   const menuMobile = document.querySelector('.menu-mobile')
   const navHeader = document.querySelector('.flex-lista')
-
-  function ativarMenuMobile(){
+  const navHeaderItem = document.querySelectorAll('.flex-lista li')
+  function ativarMenuMobile(event){
+    if(event.type==='touchstart')
+    event.preventDefault()
     menuMobile.classList.toggle('ativo')
     navHeader.classList.toggle('ativo')
-    
   }
-
-
+  
   menuMobile.addEventListener('click', ativarMenuMobile)
+  menuMobile.addEventListener('touchstart', ativarMenuMobile)
