@@ -28,7 +28,7 @@ secoes.forEach((item) =>
 
 
 
-  
+  function mobile(){
   const menuMobile = document.querySelector('.menu-mobile')
   const navHeader = document.querySelector('.flex-lista')
   const navHeaderItem = document.querySelectorAll('.flex-lista li')
@@ -41,3 +41,8 @@ secoes.forEach((item) =>
   
   menuMobile.addEventListener('click', ativarMenuMobile)
   menuMobile.addEventListener('touchstart', ativarMenuMobile)
+}
+mobile()
+
+
+
