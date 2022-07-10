@@ -71,11 +71,13 @@ body{
    height: 130px;
    border-radius: 4px;
    display: none;
-    animation: teste .6s forwards;
-    padding-bottom: 10px;
-   
-
-  
+   animation: teste .6s forwards;
+   padding-bottom: 10px;
+   position: absolute;
+    top: 80px;
+ }
+ .background2{
+  position: relative;
  }
  .flex-lista li{
   padding-top: 8px;
@@ -119,10 +121,10 @@ body{
 }
 @keyframes teste {
   from{
-    transform: translateX(30px);
+    transform: translateX(100%);
     
   }
   to{
-    transform: translateX(0px);
+    transform: translateX(-20%);
   }
 }
