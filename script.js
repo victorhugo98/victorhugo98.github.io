@@ -27,10 +27,10 @@ secoes.forEach((item) =>
   window.addEventListener('scroll', animarItens)
 
 
-
-  function mobile(){
   const menuMobile = document.querySelector('.menu-mobile')
   const navHeader = document.querySelector('.flex-lista')
+  const events = ['click','touchstart']
+  function mobile(){
   const navHeaderItem = document.querySelectorAll('.flex-lista li')
   function ativarMenuMobile(event){
     if(event.type==='touchstart')
@@ -38,11 +38,24 @@ secoes.forEach((item) =>
     menuMobile.classList.toggle('ativo')
     navHeader.classList.toggle('ativo')
   }
+  events.forEach(event=>{
+
+    menuMobile.addEventListener(event, ativarMenuMobile)
+  })
   
-  menuMobile.addEventListener('click', ativarMenuMobile)
-  menuMobile.addEventListener('touchstart', ativarMenuMobile)
 }
 mobile()
 
+function outsideClick(e){
+  
+  if(!menuMobile.contains(e.target)){
+  menuMobile.classList.remove('ativo')
+  navHeader.classList.remove('ativo')
+}
+  
+}
+events.forEach(event=>{
 
-
+  document.documentElement.addEventListener(event, outsideClick)
+  
+})
