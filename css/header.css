@@ -27,7 +27,7 @@ body{
   max-width: 960px;
   margin: 0 auto;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center;  
   
 }
 .flex-lista li:hover{
@@ -63,10 +63,8 @@ body{
 @media(max-width: 970px){
  .flex-lista{
    position: absolute;
-   right: -20px;
-   top: 120px;
    flex-direction: column;
-   background-color: rgb(58, 36, 181);
+   background-color:rgb(24, 0, 160);
    width: 100px;
    height: 130px;
    border-radius: 4px;
@@ -74,18 +72,19 @@ body{
    animation: teste .6s forwards;
    padding-bottom: 10px;
    position: absolute;
-    top: 80px;
+   top: 90px;
+   right: 0px;
+ }
+ .flex-lista.ativo{
+  display: block;
+  animation: teste .6s forwards;
+  z-index: 1000;
  }
  .background2{
   position: relative;
  }
  .flex-lista li{
   padding-top: 8px;
- }
- .flex-lista.ativo{
-  display: block;
-  animation: teste .6s forwards;
-  z-index: 1000;
  }
  .menu-mobile{
    display: block;
@@ -121,10 +120,10 @@ body{
 }
 @keyframes teste {
   from{
-    transform: translateX(100%);
+    transform: translateY(15px);
     
   }
   to{
-    transform: translateX(-20%);
+    transform: translateY(-20%);
   }
 }

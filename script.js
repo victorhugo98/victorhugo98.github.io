@@ -35,27 +35,29 @@ secoes.forEach((item) =>
   function ativarMenuMobile(event){
     if(event.type==='touchstart')
     event.preventDefault()
+
     menuMobile.classList.toggle('ativo')
     navHeader.classList.toggle('ativo')
+    outsideClick(this)
   }
-  events.forEach(event=>{
 
+  events.forEach(event=>{
     menuMobile.addEventListener(event, ativarMenuMobile)
   })
   
 }
 mobile()
 
-function outsideClick(e){
-  
-  if(!menuMobile.contains(e.target)){
-  menuMobile.classList.remove('ativo')
-  navHeader.classList.remove('ativo')
-}
-  
-}
-events.forEach(event=>{
+function outsideClick(element){
+  const html = document.documentElement
+  html.addEventListener('click', handleOutsideClick)
+    function handleOutsideClick(e){
+      if(!e.target.contains(element) && !e.target.contains(navHeader)){
+        menuMobile.classList.remove('ativo')
+        navHeader.classList.remove('ativo')
+        html.removeEventListener('click', handleOutsideClick)
+      }
+      }
 
-  document.documentElement.addEventListener(event, outsideClick)
   
-})
+}
